@@ -1,0 +1,122 @@
+/* Import Google Font - Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(236, 225, 225);
+}
+.container {
+  width: 420px;
+  border-radius: 10px;
+  background: #ae9cff;
+  padding: 28px 28px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Roboto", sans-serif;
+}
+.container h2 {
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+}
+.search {
+  margin: 20px 0;
+  position: relative;
+}
+
+.search input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 8px 35px 8px 35px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid rgb(179, 179, 179);
+}
+.search i {
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+}
+.search .icon_search {
+  left: 0;
+}
+.search .icon_close {
+  cursor: pointer;
+  right: 0;
+  display: none;
+}
+.search input::placeholder {
+  color: #3c3c3d;
+}
+.search input:focus {
+  border: 1px solid #ffffff;
+}
+.info_text {
+  font-size: 16px;
+  color: #3c3c3d;
+  margin: 0 8px;
+  padding: 0 35px;
+}
+.container.active .info_text{
+  display: none;
+}
+.info_text span {
+  font-weight: 500;
+}
+.container ul {
+  height: 0;
+  opacity: 0;
+}
+.container.active ul{
+  opacity: 1;
+  height: 100%;
+}
+ul li {
+  display: flex;
+  list-style: none;
+  margin-bottom: 14px;
+  align-items: center;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+}
+ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.word p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.word span {
+  font-size: 12px;
+  color: #666666;
+}
+.word .icon_volume {
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+ul .result {
+  height: 100%;
+}
+.result li .details {
+  padding-left: 15px;
+  border-radius: 8px 0 0 8px;
+  border-left: 4px solid #4d59fb;
+}
+.result li p {
+  font-size: 17px;
+  font-weight: 500;
+}
+.result li span {
+  font-size: 15px;
+  color: #666666;
+}
